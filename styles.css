@@ -1,0 +1,931 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: 'inter', sans-serif;
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #240533;
+    height: 80px;
+    z-index: 999;
+}
+label.logo{
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    line-height: 80px;
+    margin: 0 100px;
+    
+}
+label.logo:hover{
+    margin: 5px 100px;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #0d71fc;
+    transition: .5s;
+}
+
+.checkbtn{
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: none;
+
+}
+#check{
+    display: none;
+}
+
+#main-banner{
+    display: block;
+    text-align: left;
+    padding: 0 100px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    margin-top: 60px;
+    color: white;
+    background-color: rgba(35, 3, 44, 0.74);
+    position: relative;
+    overflow: hidden;
+}
+
+.main-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#hero{
+    padding-top: 100px;
+    width: 70%;
+    z-index: 15;
+    
+}
+
+h1{
+    font-size: 40px;
+    letter-spacing: -0.05rem;
+    width: 100%;
+    z-index: 1;
+}
+
+#main-banner p{
+    position: inherit;
+    font-size: 20px;
+    width: 100%;
+    z-index: 1;
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    z-index: 1;
+}
+
+.btn button{
+    text-decoration: none;
+    background-color: inherit;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 8px;
+    border: 1px solid;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.btn button:hover{
+    background-color: rgba(78, 78, 233, 0.74);
+    font-size: 15px;
+    border: 1px solid white;
+    transition: .3s;
+    cursor: pointer;
+}
+.btn button img{
+    filter: invert(1);
+    width: 20px;
+    margin-left: 5px;
+}
+#products{
+
+    padding: 100px 50px;
+    text-align: center;
+}
+
+#products img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#products h2{
+    font-size: 40px;
+    letter-spacing: -0.03rem;
+    font-weight: 400;
+}
+
+#products .outline{
+    text-align: left;
+    padding-left: 50px;
+}
+
+#products p{
+    font-size: 22px;
+    padding-bottom: 50px;
+    letter-spacing: -0.05rem;
+    line-height: 1.5em;
+}
+
+#products button{
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: inherit;
+    color: rgba(255, 255, 255, 0.851);
+    cursor: pointer;
+}
+#products button:hover {
+    background-color: rgba(93, 90, 249, 0.79);
+    font-size: 17px;
+    border: none;
+    transition: .5s;
+}
+
+.product-tile{
+    display: flex;
+    padding: 50px;
+}
+
+.overlay {
+    position: inherit;
+    background-color: #01022be1;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#product-tile{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    border-radius: 35px;
+    color: white;
+    background-image: url(images/product\ background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+   }
+
+
+hr {
+    width: 90%;
+    height: 1px;
+    background: #ffffff60;
+    margin: 20px auto;
+    
+}
+#benefits{
+    position: relative;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 72);
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+    padding: 50px auto;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#benefits h2{
+    font-size: 48px;
+    font-weight: 400;
+}
+
+#benefits .list-row{
+    display: flex;
+    font-size: 24px;
+    align-items: center;
+    text-align: left;
+    padding: 0%;
+    margin: 0%;
+}
+
+.list-icon{
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 20%;
+    background-color: rgb(128, 128, 243);
+    margin-right: 15px;
+    box-shadow: 5px 2px 9px rgba(0, 0, 0, 0.2);
+}
+
+b {
+    color: rgb(3, 3, 48);
+}
+
+#blog-highlights{
+    border-radius: 15px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    color: rgb(24, 8, 56);
+    padding: 50px 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    background-color: aliceblue;
+}
+.blog-all{
+    padding: 0 50px;
+}
+
+
+#blog-highlights a{
+    text-decoration: none;
+    color: rgb(24, 8, 56);
+    font-size: 18px;
+    margin-top: 20px;
+    border: 1px solid rgb(24, 8, 56);
+    width: 200px;
+    padding: 10px;
+}
+
+
+#blog-highlights a:hover{
+    background-color: rgba(54, 111, 255, 0.959);
+    color: rgb(255, 255, 255);
+    border: none;
+    transition: .5s;
+}
+
+#blog-highlights h3{
+    font-size: 24px;
+}
+
+.blog img{
+    border-radius: 8px;
+    width: 100%;
+    max-height: 300px;
+    object-fit: fill;
+    object-position: center;
+}
+
+.blog-all{
+    display: flex;
+    flex-direction: column;
+}
+
+/*#timeline {
+    background: url(/image/pexels-designecologist-1779487.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+}*/
+
+/*#timeline::before {
+    content: '';
+    background: rgb(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: ;
+    position: fixed;
+}*/
+
+#timeline {
+    background: linear-gradient(#030c50, #180224);
+    color: aliceblue;
+    margin: 0;
+    padding: 60px 0;
+}
+#timeline h2{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: -0.08em;
+}
+
+.timeline{
+    margin: 50px auto;
+    max-width: 34.15em;
+}
+
+.checkpoint {
+    max-width: 34em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.checkpoint div {
+    border: 2px solid #fffafa;
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+.checkpoint h3 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.checkpoint p {
+    line-height: 27px;
+    color: #f6f6f6;
+    font-size: 18px;
+}
+
+
+.checkpoint:nth-child(odd) {
+    border-left: 3px solid #f0f0f0;
+    padding-left: 3em;
+    transform: translateX(17em);
+    text-align: left;
+}
+.checkpoint:nth-child(even) {
+    border-right: 3px solid #f0f0f0;
+    padding-right: 3em;
+    transform: translateX(-17em);
+    text-align: right;
+}
+
+.checkpoint:nth-child(odd)::before,
+.checkpoint:nth-child(even)::before {
+    content: '';
+    background: #f0f0f0;
+    width: 3em;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.checkpoint:nth-child(odd)::before {
+    left: 0;
+}
+
+.checkpoint:nth-child(even)::before {
+    right: 0;
+}
+
+.checkpoint:nth-child(odd) div::before, .checkpoint:nth-child(even) div::before {
+    content: '';
+    background: #fff;
+    box-shadow: 0 0 0.5em #0d71fc;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
+.checkpoint:nth-child(odd) div::before {
+    left: -0.5em;
+}
+
+.checkpoint:nth-child(even) div::before {
+    right: -0.5em;
+}
+
+.team h2{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+    color: #240533;
+    padding: 50px 0;
+}
+
+#mySlides{
+    background: linear-gradient(white, rgba(255, 192, 203, 0.69));
+    padding-bottom: 50px;
+}
+
+
+#testimonials{
+    overflow: hidden;
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.slides{
+    display: flex;
+    width: 250%;
+    transition: transform 0.5s ease;
+}
+.slides img{
+    position: relative;
+    top: 35px;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: 3px white;
+    object-fit: fill;
+    margin: 50px auto;
+}
+.clients{
+    box-sizing: border-box;
+    border: none;
+    border-radius: 15px;
+    min-width: 40%;
+    height: 500px;
+    background: #f9f4f4;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 30px;
+    color: #250634
+    
+}
+#testimonials h2 {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0;
+}
+
+#testimonials .clients h2 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.clients h3 {
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: -10px;
+}
+
+.clients p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4rem;
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(171, 169, 169);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 30px;
+    padding: 0 20px;
+    background-color: rgb(9, 9, 36);
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    border-top: 1px solid white;
+}
+footer ul{
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0;
+}
+footer .foot-logo{
+    font-weight: 700;
+}
+
+.foot-icon{
+    width: 34px;
+    height: 34px;
+    padding: 0 8px;
+    filter: invert(1);
+    transition: .5s;
+}
+
+.foot-icon:hover{
+    transform: translateY(-20%); 
+}
+    
+footer .foot-case{
+    padding-top: 0%;
+    text-align: left;
+    line-height: 1.3em;
+    letter-spacing: -0.1px;
+}
+
+footer .foot-case p{
+    margin-top: 0;
+}
+
+h5{
+    margin-top: 0%;
+    font-size: 24px;
+    color: #a1c8fe;
+}
+
+#cta{
+    background: linear-gradient(rgb(30, 30, 116), rgb(0, 0, 26));
+    margin: 30px auto;
+    position:relative;
+    padding: 100px 10px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    max-width: 1000px;
+    border-radius: 45px;
+}
+
+#cta h2{
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+
+#cta button{
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #0d71fc;
+    border-radius: 8px;
+    border: none;
+
+}
+
+#cta button:hover{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    transition: .5s;
+}
+
+
+@media screen and (max-width: 1150px) {
+    .timeline{
+        width: 80vw;
+    }
+
+    .timeline .checkpoint {
+        width: 100%;
+        transform: none;
+        padding-left: 0;
+        padding-right: 0;
+        border: none
+    }
+
+    .timeline .checkpoint::before {
+        width: 3px;
+        height: 2.6em;
+        top: -1.3em;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+    .timeline .checkpoint div::before {
+        top: -0.5em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .benefits{
+        padding: 0 50px;
+    }
+
+}
+
+@media screen and (max-width: 950px) {
+    #products{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .product-tile{
+        padding-bottom: 50px;
+    }
+    #hero{
+        width: 80%;
+    }
+
+    #products h2{
+        font-size: 38px;
+    }
+    #products p{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    #products img{
+        width: 350px;
+        height: 350px;
+    }
+
+    #benefits h2{
+        font-size: 40px;
+        font-weight: 400;
+    }
+  
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    .team h2{
+        font-size: 30px;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 850px) {
+    label.logo{
+        margin: 0 60px;
+        
+    }
+    label.logo:hover{
+        margin: 0 60px;
+    }
+    #main-banner{
+        margin: 0;
+        padding: 60px 60px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+
+    .checkbtn{
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #000000;
+        margin-top: 0;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 50px;
+        transition: all .5s;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+
+    nav ul li{
+        display: block;
+        padding: 20px;
+    }
+
+    .product-tile{
+        flex-flow: column;
+        padding: 0;
+        padding-bottom: 50px;
+    }
+
+    #product-tile hr {
+        margin-bottom: 50px;
+    }
+
+    #products .outline{
+        text-align: center;
+        padding: 0px;
+    }
+
+    .icon{
+        margin-top: -25px;
+    }
+
+    #cta{
+        margin: 0%;
+        border-radius: 0%;
+    }
+
+    #cta h2{
+        font-size: 36px;
+    }
+
+    .blog img{
+        max-width: 100%;
+        max-height: 250px;
+    }
+
+    .checkpoint:nth-child(even) {
+        text-align: center;
+    }
+
+    .checkpoint:nth-child(odd) {
+        text-align: center;
+    }
+
+    footer{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
+
+    }
+
+    footer .foot-case {
+        margin-top: 40px;
+        text-align: center;
+    }
+    footer ul{
+        margin: 0 auto;
+        padding: 0;
+    }
+    footer .first{
+        margin-top: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    label.logo{
+        margin: 0 40px;
+    }
+    
+    label.logo:hover{
+        margin: 0 40px;
+    }
+
+    #main-banner{
+        margin: 0;
+        padding: 60px 30px;
+        padding-bottom: 50px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    #hero{
+        width: 100%;
+    }
+    h1{
+        font-size: 32px;
+        font-weight: 500;
+    }
+
+    #main-banner p{
+        font-size: 17px;
+        line-height: 1.5rem;
+        letter-spacing: -0.05em;
+    }
+
+    .btn button{
+        font-size: 15px;
+    }
+
+    #products{
+        margin: 0px;
+        padding: 50px 0px;
+        padding-bottom: 50px;
+
+    }
+    #product-tile{
+        flex-flow: column;
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    #products img{
+        width: 320px;
+        height: 320px;
+
+    }
+    #products h2{
+        font-size: 28px;
+    }
+    #products .outline{
+        text-align: center;
+        padding: 0px;
+    }
+
+    #products p{
+        font-size: 17px;
+        line-height: 1.5em;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #blog-highlights img{
+        width: 450px;
+    }
+
+    #benefits h2{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    #benefits p{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    
+    .benefits{
+        padding: 0 20px;
+    }
+
+    .icon{
+        width: 25px;
+        height: 25px;
+        margin-top: -15px;
+    }
+
+    #cta{
+        margin: 0%;
+        border-radius: 0%;
+    }
+
+    #cta h2{
+        font-size: 30px;
+    }
+
+    #cta button{
+        font-size: 14px;
+    }
+
+
+    
+}
